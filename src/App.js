@@ -1,9 +1,11 @@
-function App() {
+import Insurances from "./components/Insurances";
+
+const App = () => {
   return (
     <>
-      <h1>Hello</h1>
+      <Insurances />
     </>
   );
-}
+};
 
 export default App;
