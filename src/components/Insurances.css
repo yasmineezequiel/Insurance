@@ -1,0 +1,87 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f7f5f5;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 45px !important;
+  margin-right: 25px !important;
+  margin-left: 30px !important;
+  width: 150px !important;
+  height: 100px !important;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.25rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+  background: black !important;
+}
+
+.swiper-button-prev {
+  color: black !important;
+}
+
+.swiper-button-next {
+  color: black !important;
+}
+
+/* don't display btn when in mobile */
+
+@media only screen and (max-width: 790px) {
+  .swiper-button-prev::after {
+    display: none !important;
+  }
+
+  .swiper-button-next::after {
+    display: none !important;
+  }
+
+  .swiper-slide {
+    margin-left: 10px !important;
+  }
+}
