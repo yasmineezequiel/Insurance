@@ -26,7 +26,7 @@ body {
   text-align: center;
   font-size: 18px;
   background-color: rgb(255, 255, 255);
-  margin-bottom: 45px !important;
+  margin-bottom: 35px !important;
   margin-right: 25px !important;
   margin-left: 30px !important;
   width: 150px !important;
@@ -70,7 +70,7 @@ body {
   color: black !important;
 }
 
-/* don't display btn when in mobile */
+/* don't display btn prev and next when in mobile */
 
 @media only screen and (max-width: 790px) {
   .swiper-button-prev::after {
@@ -81,7 +81,22 @@ body {
     display: none !important;
   }
 
+  img {
+    position: relative;
+    left: 0px;
+    top: 50px;
+  }
+
+  .title {
+    position: absolute;
+    left: 60px;
+    top: 60px;
+    font-size: 20px !important;
+    text-align: center;
+  }
+
   .swiper-slide {
-    margin-left: 10px !important;
+    width: 200px !important;
+    height: 150px !important;
   }
 }

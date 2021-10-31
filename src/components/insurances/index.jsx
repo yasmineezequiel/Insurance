@@ -1,7 +1,6 @@
-import useFetchData from "../hooks/useFetchData";
-// Move all Swiper into a new UI component
+import useFetchData from "../../hooks/useFetchData";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./Insurances.css";
+import "./index.css";
 import "swiper/swiper-bundle.css";
 import SwiperCore, { Pagination, Navigation } from "swiper";
 SwiperCore.use([Pagination, Navigation]);
@@ -36,20 +35,20 @@ const Insurances = () => {
             pagination={{ clickable: true }}
             breakpoints={{
               "@0.00": {
-                slidesPerView: 1,
+                slidesPerView: 1.3,
                 spaceBetween: 9,
               },
               "@0.75": {
-                slidesPerView: 1,
+                slidesPerView: 2.3,
                 spaceBetween: 25,
               },
               "@1.00": {
                 slidesPerView: 3,
-                spaceBetween: 40,
+                spaceBetween: 30,
               },
               "@1.50": {
                 slidesPerView: 4,
-                spaceBetween: 50,
+                spaceBetween: 40,
               },
             }}
             className="mySwiper"
@@ -64,6 +63,7 @@ const Insurances = () => {
                       style={{ width: "40px", height: "40px" }}
                     />
                     <div
+                      className="title"
                       style={{
                         margin: "5px",
                         paddingTop: "20px",

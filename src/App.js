@@ -1,4 +1,4 @@
-import Insurances from "./components/Insurances";
+import Insurances from "./components/insurances";
 
 const App = () => {
   return (
