@@ -59,7 +59,7 @@ const Insurances = () => {
                   <div className="icon">
                     <img
                       src={insurance.icon.variants.light.svgUrl}
-                      alt="Icon"
+                      alt="icon"
                       style={{ width: "40px", height: "40px" }}
                     />
                     <div
